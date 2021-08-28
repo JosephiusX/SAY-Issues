@@ -154,5 +154,6 @@ lets setup a git phrase Say route. console.log the name of the topic for now ??(
     ??? no luck in the script tag lets try in the route
 
     - lets try with node event emitters
+    - I can emmit a event but I cant figure out how to connect event to button as docuent.querySelector() does not work in node.
 
 stuck on events , emitter in my topic/:name route
