@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>New Phrase</title>
+	</head>
+	<body>
+		<h1>New Phrase</h1>
+		<form action="/phrases" method="POST">
+			<label for="topic">Topics</label>
+			<input name="topics" type="text" />
+
+			<label for="phrase">Phrase</label>
+			<input name="phrase" id="phrase" type="text" placeholder="phrase" />
+			<button>Add Phrase</button>
+		</form>
+		<a href="/phrases">All Phrases</a>
+	</body>
+</html>

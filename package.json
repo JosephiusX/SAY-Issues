@@ -1,0 +1,30 @@
+{
+	"name": "SAY",
+	"version": "1.0.0",
+	"description": "## USER STORIES",
+	"main": "app.js",
+	"scripts": {
+		"start": "nodemon server.js"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/JosephiusX/SAY.git"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/JosephiusX/SAY/issues"
+	},
+	"homepage": "https://github.com/JosephiusX/SAY#readme",
+	"dependencies": {
+		"dotenv": "^10.0.0",
+		"ejs": "^3.1.6",
+		"ejs-mate": "^3.0.0",
+		"express": "^4.17.1",
+		"jsdom": "^17.0.0",
+		"method-override": "^3.0.0",
+		"mongoose": "^5.13.8",
+		"morgan": "^1.10.0"
+	}
+}

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Phrases Index</title>
+	</head>
+	<body>
+		<h1>Phrases Index</h1>
+
+		<ul>
+			<% for (let phrase of phrases){%>
+			<li><a href="/phrases/<%= phrase.id%>"><%= phrase.phrase %></a></li>
+			<% }%>
+		</ul>
+		<a href="/phrases/new">Add Phrase</a> <br />
+		<br />
+		<a href="/topics">Topics</a>
+	</body>
+</html>
