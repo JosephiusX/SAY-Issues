@@ -27,6 +27,8 @@ app.get('/', (req, res) => {
 	res.send('home route')
 })
 
+// document.querySelectorAll('') // Doucment is undefined
+
 /////////////////////////// phrase routes
 // read topics (topic Phrases)
 app.get('/topics', async (req, res) => {
@@ -46,14 +48,9 @@ app.get('/topics', async (req, res) => {
 app.get('/topic/:name', async (req, res) => {
 	const selectedTopic = req.params.name // take the value of the :name position of the paramiter string
 
-	// const EventListenerFunc = () => {
-	// 	console.log('an event occurred!')
-	// }
-	// myEmitter.on('eventName', EventListenerFunc)
-	// myEmitter.emit('eventName')
 	try {
 		const phrases = await Phrase.find({topics: selectedTopic}) // find all phrases in db with values of selectedTopic(the phrase we click on)
-		res.render('./phraseView/topic.ejs', {phrases, EventListenerFunc})
+		res.render('./phraseView/topic.ejs', {phrases})
 		console.log(req.params.name)
 	} catch (err) {
 		console.log(err)
