@@ -21,15 +21,12 @@
 				e.preventDefault()
 				console.log('say button clicked')
 			}
-			let phraseBtns = document.querySelector('.say-phrase-btn')
+
+			let phraseBtns = document.querySelectorAll('.say-phrase-btn')
 
 			for (let i = 0; i < phraseBtns.length; i++) {
-				phraseBtns.addEventListener('click', logPhrase)
+				addEventListener('click', logPhrase)
 			}
-
-			console.log('hello') // testing the script tag.  only shows up with no src in the script tag?
-			console.log(phraseBtns.length) // undefinded ????
-			console.log(phraseBtns) // button.say-phrase-btn
 		</script>
 	</body>
 </html>
