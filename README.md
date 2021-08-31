@@ -157,3 +157,19 @@ lets setup a git phrase Say route. console.log the name of the topic for now ??(
     - I can emmit a event but I cant figure out how to connect event to button as docuent.querySelector() does not work in node.
 
 stuck on events , emitter in my topic/:name route
+
+I was selecting # id instead of . class like I should have.
+
+    In my script tag in my topic.ejs Im looping through the buttons and adding event listeners to each.
+
+    using querySelector() instead of querySelectorAll()
+
+    to test if the script tag is working I console.log in it finding out that the log only works if I remove the ../../app.js source form the script tag at the bottom of my topic.ejs
+
+    further more when I run console.log(phraseBtns.length) I get undefined
+
+    if i just log prhaseBtns I get the first button.say-phrase-button with a text content of the first button in the list , but it still dosent trigger an event when the that button is clicked.
+
+    i changed phraseBtns to let instead of const. Still doesn't work.
+
+ill have to try adding onclick to the buttons when they are created since I cant get event listener to work

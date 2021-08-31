@@ -16,10 +16,17 @@
 		</ul>
 		<a href="/topics">Topics</a>
 
-		<script src="../../app.js">
-
+		<script>
 			const logPhrase = () => console.log('say button clicked')
-			document.querySlectorAll('#say-phrase-btn').addEventListener('click', logPhrase) // NOT SELECTING BUTTON /
+			let phraseBtns = document.querySelector('.say-phrase-btn')
+
+			for (let i = 0; i < phraseBtns.length; i++) {
+				phraseBtns.addEventListener('click', logPhrase)
+			}
+
+			console.log('hello') // testing the script tag.  only shows up with no src in the script tag?
+			console.log(phraseBtns.length) // undefinded ????
+			console.log(phraseBtns) // button.say-phrase-btn
 		</script>
 	</body>
 </html>
